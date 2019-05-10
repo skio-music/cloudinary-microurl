@@ -1,5 +1,6 @@
 const TYPES = {
   fetch_format: "f",
+  default_image: "d",
   crop: "c",
   effect: "e",
   flags: "fl",
@@ -22,7 +23,7 @@ module.exports = (id, options = {}) => {
     .map(key => {
       const prefix = TYPES[key];
       const value = options[key];
-      if (prefix) {
+      if (prefix && value != undefined) {
         return `${prefix}_${value}`;
       }
     })
