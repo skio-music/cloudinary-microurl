@@ -56,6 +56,18 @@ it("should render correctly with crop and width", () => {
   expect(result).toBe(url);
 });
 
+it("should render correctly with default image", () => {
+  const options = {
+    cloud_name: CLOUD_NAME,
+    default_image: "test.jpg"
+  };
+
+  const result = cloudinaryUrl("dog", options);
+  const url = cl.url("dog", options);
+
+  expect(result).toBe(url);
+});
+
 it("should render correctly version number", () => {
   const options = {
     cloud_name: CLOUD_NAME,

@@ -1,6 +1,6 @@
 {
   "name": "cloudinary-microurl",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A tiny library to generate cloudinary URLs from options objects",
   "main": "dist/cloudinaryUrl.js",
   "source": "cloudinaryUrl.js",
@@ -27,8 +27,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "cloudinary-core": "2.0.8",
+    "cloudinary-core": "2.6.3",
     "jest": "^22.3.0",
     "microbundle": "^0.4.3"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
   }
 }

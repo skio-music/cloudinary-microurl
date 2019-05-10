@@ -1,5 +1,6 @@
 const TYPES = {
   fetch_format: "f",
+  default_image: "d",
   crop: "c",
   effect: "e",
   flags: "fl",
